@@ -1,153 +1,151 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal || www.codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Boxicons CSS -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <title>Side Navigation Bar in HTML CSS JavaScript</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="logo_item">
-        <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="images/logo.png" alt=""></i>DEPARTMENT OF INFORMATION TECHNOLOGY
-      </div>
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Side Navigation Bar in HTML CSS JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="navbar_content">
-        <i class="bi bi-grid"></i>
-        <i class='bx bx-sun' id="darkLight"></i>
-      </div>
-    </nav>
-
-    <!-- sidebar -->
-    <!-- sidebar -->
-<nav class="sidebar close">
-  <div class="menu_content">
-    <ul class="menu_items">
-      <div class="menu_title menu_dahsboard"></div>
-      <!-- Start Home -->
-      <li class="item">
-        <div class="nav_link submenu_item">
-          <span class="navlink_icon">
-            <i class="bx bx-home-alt"></i>
-          </span>
-          <span class="navlink">Home</span>
-        </div>
-      </li>
-      <!-- End Home -->
-
-      <!-- Start Year -->
-      <li class="item">
-        <div class="nav_link submenu_item">
-          <span class="navlink_icon">
-            <i class="bx bx-grid-alt"></i>
-          </span>
-          <span class="navlink">Year</span>
-          <i class="bx bx-chevron-right arrow-left"></i>
-        </div>
-
-        <ul class="menu_items submenu">
-          <li>
-            <div class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-book"></i>
-              </span>
-              <span class="navlink">First Year</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <li><a href="#" class="nav_link sublink">IT A</a></li>
-              <li><a href="#" class="nav_link sublink">IT B</a></li>
-              <li><a href="#" class="nav_link sublink">IT C</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-book"></i>
-              </span>
-              <span class="navlink">Second Year</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <li><a href="#" class="nav_link sublink">IT A</a></li>
-              <li><a href="#" class="nav_link sublink">IT B</a></li>
-              <li><a href="#" class="nav_link sublink">IT C</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-book"></i>
-              </span>
-              <span class="navlink">Third Year</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <li><a href="#" class="nav_link sublink">IT A</a></li>
-              <li><a href="#" class="nav_link sublink">IT B</a></li>
-            </ul>
-          </li>
-          <li>
-            <div class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="bx bx-book"></i>
-              </span>
-              <span class="navlink">Forth Year</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <li><a href="#" class="nav_link sublink">IT A</a></li>
-              <li><a href="#" class="nav_link sublink">IT B</a></li>
-            </ul>
-          </li>
-          
-        </ul>
-      </li>
-      <!-- End Year -->
-    </ul>
-
-    <ul class="menu_items"> 
-    </ul>
-    <ul class="menu_items">
-      <li class="item">
-        <a href="#" class="nav_link">
-          <span class="navlink_icon">
-            <i class="bx bx-medal"></i>
-          </span>
-          <span class="navlink">Award</span>
-        </a>
-      </li>
-      <li class="item">
-        <a href="#" class="nav_link">
-          <span class="navlink_icon">
-            <i class="bx bx-layer"></i>
-          </span>
-          <span class="navlink">Placements</span>
-        </a>
-      </li>
-      <li class="item">
-        <a href="#" class="nav_link">
-          <span class="navlink_icon">
-            <i class="bx bx-layer"></i>
-          </span>
-          <span class="navlink">Accreditation</span>
-        </a>
-      </li>
-    </ul>
-
-    <!-- Sidebar Open / Close -->
-    <div class="bottom_content">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo_item">
+      <i class="bx bx-menu" id="sidebarOpen"></i>
+      <img src="images/logo.png" alt="Logo">
+      <span>DEPARTMENT OF INFORMATION TECHNOLOGY</span>
     </div>
-  </div>
-</nav>
+    <div class="navbar_content">
+      <i class="bi bi-grid"></i>
+      <i class='bx bx-sun' id="darkLight"></i>
+    </div>
+  </nav>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-  </body>
+  <!-- Sidebar -->
+  <nav class="sidebar close">
+    <div class="menu_content">
+      <ul class="menu_items">
+        <div class="menu_title">Dashboard</div>
+        
+        <!-- Home Section -->
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon"><i class="bx bx-home-alt"></i></span>
+            <span class="navlink">Home</span>
+          </a>
+        </li>
+
+        <!-- Year Section -->
+        <li class="item">
+          <div class="nav_link submenu_item">
+            <span class="navlink_icon"><i class="bx bx-grid-alt"></i></span>
+            <span class="navlink">Year</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+          <ul class="menu_items submenu">
+            <!-- First Year -->
+            <li>
+              <div class="nav_link submenu_item">
+                <span class="navlink_icon"><i class="bx bx-book"></i></span>
+                <span class="navlink">First Year</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <li><a href="#" class="nav_link sublink">IT A</a></li>
+                <li><a href="#" class="nav_link sublink">IT B</a></li>
+                <li><a href="#" class="nav_link sublink">IT C</a></li>
+              </ul>
+            </li>
+            <!-- Second Year -->
+            <li>
+              <div class="nav_link submenu_item">
+                <span class="navlink_icon"><i class="bx bx-book"></i></span>
+                <span class="navlink">Second Year</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <li><a href="#" class="nav_link sublink">IT A</a></li>
+                <li><a href="#" class="nav_link sublink">IT B</a></li>
+                <li><a href="#" class="nav_link sublink">IT C</a></li>
+              </ul>
+            </li>
+            <!-- Third Year -->
+            <li>
+              <div class="nav_link submenu_item">
+                <span class="navlink_icon"><i class="bx bx-book"></i></span>
+                <span class="navlink">Third Year</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <li><a href="#" class="nav_link sublink">IT A</a></li>
+                <li><a href="#" class="nav_link sublink">IT B</a></li>
+              </ul>
+            </li>
+            <!-- Fourth Year -->
+            <li>
+              <div class="nav_link submenu_item">
+                <span class="navlink_icon"><i class="bx bx-book"></i></span>
+                <span class="navlink">Fourth Year</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+              <ul class="menu_items submenu">
+                <li><a href="#" class="nav_link sublink">IT A</a></li>
+                <li><a href="#" class="nav_link sublink">IT B</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Additional Sections -->
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon"><i class="bx bx-medal"></i></span>
+            <span class="navlink">Awards</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon"><i class="bx bx-layer"></i></span>
+            <span class="navlink">Placements</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon"><i class="bx bx-trophy"></i></span>
+            <span class="navlink">Accreditation</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navlink_icon"><i class="bx bx-support"></i></span>
+            <span class="navlink">Support</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main_content">
+    <section class="home_section">
+      <h1>Welcome to the Department of Information Technology</h1>
+      <p>Explore resources, updates, and achievements of our department.</p>
+    </section>
+
+    <section class="announcements">
+      <h2>Announcements</h2>
+      <ul>
+        <li>Upcoming workshop on "Cybersecurity Trends" - February 10, 2025</li>
+        <li>Placement drive for final-year students - March 5, 2025</li>
+        <li>New certification courses available in AI and Data Science.</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
 </html>
